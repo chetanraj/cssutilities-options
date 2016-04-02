@@ -1,6 +1,6 @@
 {
   "name": "cssutilities-options",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CSS layout utilities with options.",
   "main": "cssutilities.js",
   "dependencies": {
