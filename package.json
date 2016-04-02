@@ -11,6 +11,9 @@
   "scripts": {
     "test": "./node_modules/jshint/bin/jshint cssutilities.js"
   },
+  "bin": {
+    "cssutilities-options": "./bin/cssutilities-options"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chetanraj/cssutilities-options.git"
