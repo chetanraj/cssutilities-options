@@ -6,22 +6,16 @@
 
 ### How to use ?
 
-```
-git clone https://github.com/chetanraj/cssutilities-options.git
-```
-
-```bash
-cd cssutilities-options
-```
-
 ```js
-node cssutilities.js 
+$ npm install -g cssutilities-options
+
+$ cssutilities-options
 ```
 
 ### Options in terminal, Choose based on your requirement
 ---
 
-```js
+```
 Which sizing element do you need
 > px
   em
