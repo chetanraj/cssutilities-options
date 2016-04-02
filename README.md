@@ -32,6 +32,8 @@ Add padding ? (Y/n) n
 
 Do you need More Utilities like Floats, Display and Overflow (y/N) n
 
+minify (Y/n) y
+
 ```
 
 ### Output
