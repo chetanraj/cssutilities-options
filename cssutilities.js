@@ -49,31 +49,48 @@ var options = [{
 
 inquirer.prompt(options, function(answers) {
 	var css = '';
+	var classSuffix = '';
 
+	switch (answers.options) {
+		case 'px':
+			classSuffix = 'x';
+			break;
+		case 'em':
+			classSuffix = 'e';
+			break;
+		case 'rem':
+			classSuffix = 'r';
+			break;
+		case '%':
+			classSuffix = 'pr';
+			break;
+
+	}
+	
 	for (var i = answers.rangestart; i <= answers.rangeend; i++) {
 
 		if (answers.margin) {
-			css += ".m" + i + "{margin:" + i + "" + answers.options + ";}";
+			css += ".m" + i + classSuffix + "{margin:" + i + "" + answers.options + ";}";
 
-			css += ".mt" + i + "{margin-top:" + i + "" + answers.options + ";}";
+			css += ".mt" + i + classSuffix + "{margin-top:" + i + "" + answers.options + ";}";
 
-			css += ".mr" + i + "{margin-right:" + i + "" + answers.options + ";}";
+			css += ".mr" + i + classSuffix + "{margin-right:" + i + "" + answers.options + ";}";
 
-			css += ".mb" + i + "{margin-bottom:" + i + "" + answers.options + ";}";
+			css += ".mb" + i + classSuffix + "{margin-bottom:" + i + "" + answers.options + ";}";
 
-			css += ".ml" + i + "{margin-left:" + i + "" + answers.options + ";}";
+			css += ".ml" + i + classSuffix + "{margin-left:" + i + "" + answers.options + ";}";
 		}
 
 		if (answers.padding) {
-			css += ".p" + i + "{padding:" + i + "" + answers.options + ";}";
+			css += ".p" + i + classSuffix + "{padding:" + i + "" + answers.options + ";}";
 
-			css += ".pt" + i + "{padding-top:" + i + "" + answers.options + ";}";
+			css += ".pt" + i + classSuffix + "{padding-top:" + i + "" + answers.options + ";}";
 
-			css += ".pr" + i + "{padding-right:" + i + "" + answers.options + ";}";
+			css += ".pr" + i + classSuffix + "{padding-right:" + i + "" + answers.options + ";}";
 
-			css += ".pb" + i + "{padding-bottom:" + i + "" + answers.options + ";}";
+			css += ".pb" + i + classSuffix + "{padding-bottom:" + i + "" + answers.options + ";}";
 
-			css += ".pl" + i + "{padding-left:" + i + "" + answers.options + ";}";
+			css += ".pl" + i + classSuffix + "{padding-left:" + i + "" + answers.options + ";}";
 		}
 	}
 
