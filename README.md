@@ -2,7 +2,7 @@
 
 > CSS layout utilities with options
 
-[![GitHub version](https://badge.fury.io/gh/chetanraj%2Fcssutilities-options.svg)](https://badge.fury.io/gh/chetanraj%2Fcssutilities-options) [![npm version](https://badge.fury.io/js/cssutilities-options.svg)](https://badge.fury.io/js/cssutilities-options)
+[![GitHub version](https://badge.fury.io/gh/chetanraj%2Fcssutilities-options.svg)](https://badge.fury.io/gh/chetanraj%2Fcssutilities-options) [![npm version](https://badge.fury.io/js/cssutilities-options.svg)](https://badge.fury.io/js/cssutilities-options) [![Build Status](https://travis-ci.org/chetanraj/cssutilities-options.svg?branch=master)](https://travis-ci.org/chetanraj/cssutilities-options)
 
 ### How to use ?
 
