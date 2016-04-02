@@ -5,7 +5,9 @@
   "main": "cssutilities.js",
   "dependencies": {
     "inquirer": "^0.12.0",
-    "jshint": "^2.9.1"
+    "jshint": "^2.9.1",
+    "cssbeautify": "^0.3.1",
+    "colors": "^1.1.2"
   },
   "devDependencies": {},
   "scripts": {

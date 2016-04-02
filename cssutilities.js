@@ -1,4 +1,6 @@
 var inquirer = require("inquirer");
+var cssbeautify = require("cssbeautify");
+var colors = require('colors');
 
 var options = [{
 	type: "list",
@@ -38,6 +40,11 @@ var options = [{
 	name: "more",
 	message: "Do you need More Utilities like Floats, Display and Overflow",
 	default: false
+}, {
+	type: "confirm",
+	name: "minify",
+	message: "minify",
+	default: true
 }];
 
 inquirer.prompt(options, function(answers) {
@@ -72,6 +79,20 @@ inquirer.prompt(options, function(answers) {
 
 	if (answers.more) {
 		css += ".db{display:block}.dib{display:inline-block}.di{display:inline}.dt{display:table}.dtc{display:table-cell}.fl{float:left}.fr{float:right}.oh{overflow:hidden}.cb,.clear{clear:both}";
+	}
+
+	if (!answers.minify) {
+		var beautified = cssbeautify(css, {
+			indent: '  ',
+			openbrace: 'separate-line',
+			autosemicolon: true
+		});
+
+		css = beautified;
+	}
+
+	if (!answers.margin && !answers.padding) {
+		css = "Please select atleast one, margin or padding !".black.bgWhite;
 	}
 
 	console.log(css);
