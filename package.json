@@ -1,0 +1,31 @@
+{
+  "name": "cssutilities-options",
+  "version": "1.0.0",
+  "description": "CSS layout utilities with options.",
+  "main": "cssutilities.js",
+  "dependencies": {
+    "inquirer": "^0.12.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chetanraj/cssutilities-options.git"
+  },
+  "keywords": [
+    "css",
+    "cssutilities",
+    "utlities",
+    "options",
+    "web",
+    "html"
+  ],
+  "author": "chetanraj",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chetanraj/cssutilities-options/issues"
+  },
+  "homepage": "https://github.com/chetanraj/cssutilities-options#readme"
+}
