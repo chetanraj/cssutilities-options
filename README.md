@@ -7,9 +7,9 @@
 ### How to use ?
 
 ```js
-$ npm install -g cssutilities-options
+npm install -g cssutilities-options
 
-$ cssutilities-options
+cssutilities-options
 ```
 
 ### Options in terminal, Choose based on your requirement
