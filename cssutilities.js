@@ -122,7 +122,7 @@ inquirer.prompt(options, function(answers) {
 	}
 	
 	if (answers.output == "file") {
-		fs.writeFile(fname, css, (err) => {
+		fs.writeFile(fname, css, function(err) {
 		  if (err) throw err;
 		  console.log('It\'s saved!');
 		});
