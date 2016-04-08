@@ -46,7 +46,9 @@ Do you want the css to store in a file or output here in console ?
 
 ```
 
-### Output
+> The out can be stored in a file/can be printed on console.
+
+### Sample Output
 
 ```
 .m1x{margin:1px;}.mt1x{margin-top:1px;}.mr1x{margin-right:1px;}.mb1x{margin-bottom:1px;}.ml1x{margin-left:1px;}.m2x{margin:2px;}.mt2x{margin-top:2px;}.mr2x{margin-right:2px;}.mb2x{margin-bottom:2px;}.ml2x{margin-left:2px;}.m3x{margin:3px;}.mt3x{margin-top:3px;}.mr3x{margin-right:3px;}.mb3x{margin-bottom:3px;}.ml3x{margin-left:3px;}.m4x{margin:4px;}.mt4x{margin-top:4px;}.mr4x{margin-right:4px;}.mb4x{margin-bottom:4px;}.ml4x{margin-left:4px;}.m5x{margin:5px;}.mt5x{margin-top:5px;}.mr5x{margin-right:5px;}.mb5x{margin-bottom:5px;}.ml5x{margin-left:5px;}
