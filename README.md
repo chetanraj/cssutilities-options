@@ -40,6 +40,10 @@ Do you need More Utilities like Floats, Display and Overflow (y/N) n
 
 minify (Y/n) y
 
+Do you want the css to store in a file or output here in console ?
+> file
+  console
+
 ```
 
 ### Output

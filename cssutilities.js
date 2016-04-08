@@ -1,6 +1,7 @@
 var inquirer = require("inquirer");
 var cssbeautify = require("cssbeautify");
 var colors = require('colors');
+var fs = require("fs");
 
 var options = [{
 	type: "list",
@@ -45,6 +46,11 @@ var options = [{
 	name: "minify",
 	message: "minify",
 	default: true
+}, {
+	type: "list",
+	name: "output",
+	message: "Do you want the css to store in a file or output here in console ?",
+	choices: ["file", "console"]
 }];
 
 inquirer.prompt(options, function(answers) {
@@ -98,6 +104,7 @@ inquirer.prompt(options, function(answers) {
 		css += ".db{display:block}.dib{display:inline-block}.di{display:inline}.dt{display:table}.dtc{display:table-cell}.fl{float:left}.fr{float:right}.oh{overflow:hidden}.cb,.clear{clear:both}";
 	}
 
+	var fname = "cssutilities.css";
 	if (!answers.minify) {
 		var beautified = cssbeautify(css, {
 			indent: '  ',
@@ -106,11 +113,20 @@ inquirer.prompt(options, function(answers) {
 		});
 
 		css = beautified;
+	} else {
+		fname ="cssutilities.min.css";
 	}
 
 	if (!answers.margin && !answers.padding) {
 		css = "Please select atleast one, margin or padding !".black.bgWhite;
 	}
-
-	console.log(css);
+	
+	if (answers.output == "file") {
+		fs.writeFile(fname, css, (err) => {
+		  if (err) throw err;
+		  console.log('It\'s saved!');
+		});
+	} else {
+		console.log(css);
+	}
 });
