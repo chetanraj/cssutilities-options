@@ -4,11 +4,14 @@
 
 [![GitHub version](https://badge.fury.io/gh/chetanraj%2Fcssutilities-options.svg)](https://badge.fury.io/gh/chetanraj%2Fcssutilities-options) [![npm version](https://badge.fury.io/js/cssutilities-options.svg)](https://badge.fury.io/js/cssutilities-options) [![Build Status](https://travis-ci.org/chetanraj/cssutilities-options.svg?branch=master)](https://travis-ci.org/chetanraj/cssutilities-options)
 
-[![bitHound Code](https://www.bithound.io/github/chetanraj/cssutilities-options/badges/code.svg)](https://www.bithound.io/github/chetanraj/cssutilities-options) [![bitHound Overall Score](https://www.bithound.io/github/chetanraj/cssutilities-options/badges/score.svg)](https://www.bithound.io/github/chetanraj/cssutilities-options)
+[![bitHound Code](https://www.bithound.io/github/chetanraj/cssutilities-options/badges/code.svg)](https://www.bithound.io/github/chetanraj/cssutilities-options) [![bitHound Overall Score](https://www.bithound.io/github/chetanraj/cssutilities-options/badges/score.svg)](https://www.bithound.io/github/chetanraj/cssutilities-options) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+
 
 [![wercker status](https://app.wercker.com/status/a357c030ef1cccfb2a344cf987774fd3/m "wercker status")](https://app.wercker.com/project/bykey/a357c030ef1cccfb2a344cf987774fd3)
 
 [![NPM](https://nodei.co/npm/cssutilities-options.png)](https://nodei.co/npm/cssutilities-options/)
+
+[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
 ### How to use ?
 
