@@ -4,15 +4,16 @@
   "description": "CSS layout utilities with options.",
   "main": "cssutilities.js",
   "dependencies": {
-    "inquirer": "^0.12.0",
-    "jshint": "^2.9.1",
-    "cssbeautify": "^0.3.1",
     "colors": "^1.1.2",
-    "fs": "^0.0.2"
+    "cssbeautify": "^0.3.1",
+    "fs": "^0.0.2",
+    "inquirer": "^0.12.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "standard": "^6.0.8"
+  },
   "scripts": {
-    "test": "./node_modules/jshint/bin/jshint cssutilities.js"
+    "test": "standard"
   },
   "bin": {
     "cssutilities-options": "./bin/cssutilities-options"
