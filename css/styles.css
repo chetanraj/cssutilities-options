@@ -1,0 +1,28 @@
+@font-face {
+    font-family: ClearSans-Thin;
+    src: url(../fonts/ClearSans-Thin.ttf);
+}
+
+@font-face {
+    font-family: ClearSans-Light;
+    src: url(../fonts/ClearSans-Light.ttf);
+}
+
+
+@font-face {
+    font-family: ClearSans-Medium;
+    src: url(../fonts/ClearSans-Medium.ttf);
+}
+
+/*
+ * Heading
+ */
+ h1 {
+    font-family: ClearSans-Thin;
+    font-size: 42px;
+    color: #464646;
+}
+
+.row {
+	text-align: center;
+}
