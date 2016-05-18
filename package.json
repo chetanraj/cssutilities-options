@@ -15,6 +15,14 @@
   "scripts": {
     "test": "standard"
   },
+  "standard": {
+    "ignore": [
+      "/js/backbone.js",
+      "/js/underscore.js",
+      "/js/jquery.js",
+      "/js/app.js"
+    ]
+  },
   "bin": {
     "cssutilities-options": "./bin/cssutilities-options"
   },

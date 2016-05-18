@@ -4,10 +4,6 @@
         var classSuffix = '';
         var answers = [];
 
-
-
-        answers.minify = true;
-
         $(".dependents").children("input:checked").each(function(){
 
             if($(this).attr('name') == 'check') {
