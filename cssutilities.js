@@ -129,4 +129,4 @@ inquirer.prompt(options, function (answers) {
   } else {
     console.log(css)
   }
-})
+});

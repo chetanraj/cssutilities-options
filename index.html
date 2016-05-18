@@ -1,23 +1,175 @@
 <!DOCTYPE html>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    
-    <title>CSSUtilities Options</title>
-    
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/shelves.css">
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+<title>CSSUtilities Options</title>
+
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/shelves.css">
+<link rel="stylesheet" href="css/cssutilities.css">
+
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <html>
 
-<body>
-  <div class="row" style="margin-top: 50px; margin-bottom: 20px">
-		<h1>CSSUtilities Options</h1>
-	</div>
+<body class="m0x p0x">
+    <header>
+        <h1 class="m0x p0x">CSSUtilities Options</h1>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <p class="f20 fw100">
+                Hello Everyone, CSSUtilities Options is an optional CSS Generator
+            </p>
+        </div>
+
+        <div class="row one" id="">
+            <div class="column-1 prefix-1">
+                <div class="number-prefix number-prefix1">1</div>
+            </div>
+            <div class="box column-5">
+                <h2>Which sizing element do you need ?</h2>
+                <div class="dependents squaredThree px">
+                    <input type="radio" id="px" name="check" />
+                    <label for="px"><span></span></label>
+                    <label for="px" class="text-label-for-squaredThree">px</label>
+                </div>
+                <div class="dependents squaredThree em">
+                    <input type="radio" id="em" name="check" />
+                    <label for="em"><span></span></label>
+                    <label for="em" class="text-label-for-squaredThree">em</label>
+                </div>
+                <div class="dependents squaredThree rem">
+                    <input type="radio" id="rem" name="check" />
+                    <label for="rem"><span></span></label>
+                    <label for="rem" class="text-label-for-squaredThree">rem</label>
+                </div>
+                <div class="dependents squaredThree percentage">
+                    <input type="radio" id="percentage" name="check" />
+                    <label for="percentage"><span></span></label>
+                    <label for="percentage" class="text-label-for-squaredThree">%</label>
+                </div>
+            </div>
+            <div class="column-3">
+                <p class="sidebar">Please select atleast one sizing element !</p>
+            </div>
+        </div>
+
+        <div class="row two">
+            <div class="column-1 prefix-1">
+                <div class="number-prefix number-prefix2">2</div>
+            </div>
+            <div class="box column-5">
+                <h2>Range Start</h2>
+                <input class="range-start" id="range-start" type="text" placeholder="range 0 - any number">
+            </div>
+            <div class="column-3">
+                <p class="sidebar"></p>
+            </div>
+        </div>
+
+        <div class="row three">
+            <div class="column-1 prefix-1">
+                <div class="number-prefix number-prefix3">3</div>
+            </div>
+            <div class="box column-5">
+                <h2>Range End</h2>
+                <input class="range-end" id="range-end" type="text" placeholder="greater than range start">
+            </div>
+        </div>
+
+        <div class="row four">
+            <div class="column-1 prefix-1">
+                <div class="number-prefix number-prefix4">4</div>
+            </div>
+            <div class="box column-5">
+                <h2>Margin(s)</h2>
+                <div class="dependents squaredThree myes">
+                    <input type="radio" id="myes" name="mcheck" checked />
+                    <label for="myes"><span></span></label>
+                    <label for="myes" class="text-label-for-squaredThree">Yes</label>
+                </div>
+                <div class="dependents squaredThree mno">
+                    <input type="radio" id="mno" name="mcheck" />
+                    <label for="mno"><span></span></label>
+                    <label for="mno" class="text-label-for-squaredThree">No</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row five">
+            <div class="column-1 prefix-1">
+                <div class="number-prefix number-prefix5">5</div>
+            </div>
+            <div class="box column-5">
+                <h2>Padding(s)</h2>
+                <div class="dependents squaredThree pyes">
+                    <input type="radio" id="pyes" name="pcheck" checked/>
+                    <label for="pyes"><span></span></label>
+                    <label for="pyes" class="text-label-for-squaredThree">Yes</label>
+                </div>
+                <div class="dependents squaredThree pno">
+                    <input type="radio" id="pno" name="pcheck" />
+                    <label for="pno"><span></span></label>
+                    <label for="pno" class="text-label-for-squaredThree">No</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row six">
+            <div class="column-1 prefix-1">
+                <div class="number-prefix number-prefix6">6</div>
+            </div>
+            <div class="box column-5">
+                <h2>Do you need More Utilities like Floats, Display and Overflow ?</h2>
+                <div class="dependents squaredThree muyes">
+                    <input type="radio" id="muyes" name="mucheck" />
+                    <label for="muyes"><span></span></label>
+                    <label for="muyes" class="text-label-for-squaredThree">Yes</label>
+                </div>
+                <div class="dependents squaredThree muno">
+                    <input type="radio" id="muno" name="mucheck" checked="" />
+                    <label for="muno"><span></span></label>
+                    <label for="muno" class="text-label-for-squaredThree">No</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row seven">
+            <div class="column-1 prefix-1">
+                <div class="number-prefix number-prefix7">7</div>
+            </div>
+            <div class="box column-5">
+                <h2>minify ?</h2>
+                <div class="dependents squaredThree muyes">
+                    <input type="radio" id="mfyes" name="mfycheck" />
+                    <label for="mfyes"><span></span></label>
+                    <label for="mfyes" class="text-label-for-squaredThree">Yes</label>
+                </div>
+                <div class="dependents squaredThree muno">
+                    <input type="radio" id="mfno" name="mfycheck" checked="" />
+                    <label for="mfno"><span></span></label>
+                    <label for="mfno" class="text-label-for-squaredThree">No</label>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <div class="row eight">
+            <button id="submit" class="submit">generate</button>
+        </div>
+    </div>
+
+    <script src="js/underscore.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/backbone.js"></script>
+
+    <script src="js/app.js"></script>
 </body>
 
 </html>
