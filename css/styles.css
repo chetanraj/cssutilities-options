@@ -5,11 +5,11 @@ html, body {
 /*
  * Fonts
  */
- 
+
  .f20 {
 	 font-size: 20px;
  }
- 
+
  .fw100 {
    font-weight: 100;
  }
@@ -67,6 +67,7 @@ header {
     height: 100px;
     padding: 0;
     line-height: 100px;
+    border-top: 3px solid #4D6DE3;
 }
 
 .tal {
@@ -79,25 +80,25 @@ header {
     padding: 0 1em 1em;
     text-align: left;
  }
- 
+
  .number-prefix {
     width: 2em;
     height: 2em;
     line-height: 2em;
     border-radius: 50%;
-    border: 5px solid #464646; 
+    border: 5px solid #464646;
  }
- 
+
  .dependents {
    position: relative;
    margin-bottom: .5em;
  }
- 
-  .text-label-for-squaredThree {
+
+  .text-label-for-checkbox-bck {
       padding-left: .5em;
   }
- 
- .squaredThree label > span {
+
+ .checkbox-bck label > span {
    width: 20px;
    height: 20px;
    cursor: pointer;
@@ -106,10 +107,10 @@ header {
    left: 0;
    background: #fff;
    border-radius: 4px;
-   border: 0.3px solid #C7EEFF;
+   border: 0.3px solid #4D6DE3;
 }
 
-.squaredThree label > span:after {
+.checkbox-bck label > span:after {
   content: '';
   width: 22px;
   height: 22px;
@@ -121,11 +122,11 @@ header {
   opacity: 0;
   left: 5px;
 }
-.squaredThree input[type=radio] {
+.checkbox-bck input[type=radio] {
   visibility: hidden;
 }
 
-.squaredThree input[type=radio]:checked + label > span:after {
+.checkbox-bck input[type=radio]:checked + label > span:after {
   color: #FC5185;
 }
 
@@ -173,23 +174,24 @@ header {
     padding-bottom: 10px;
     margin-right: 20px;
     font-family: Roboto;
-    font-size: 3em;
+    font-size: 2em;
     border-radius: 10px;
     background: none;
     transition: all 0.2s;
     background-color: #FFF;
-    color: #3A4750;
-    border: solid 3px #3A4750;
+    color: #4D6DE3;
+    border: solid 3px #4D6DE3;
 }
 
-.submit:focus {
+.submit:focus,
+#output:focus {
     outline: none;
 }
 
 .submit:hover {
-    background-color: #3A4750;
+    background-color: #4D6DE3;
     color: #FFF;
-    border: solid 3px #3A4750;
+    border: solid 3px #4D6DE3;
 }
 
 #output {
