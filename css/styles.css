@@ -2,6 +2,7 @@ html, body {
   color: #464646;
   font-family: Roboto;
 }
+
 /*
  * Fonts
  */
@@ -28,6 +29,7 @@ h1 {
 .row {
     text-align: center;
     margin-bottom: 1em;
+    padding-top: 1em;
 }
 
 .row .column-3 {
@@ -39,6 +41,16 @@ h1 {
  */
 p {
     font-size: 16px;
+    padding: .3em;
+    margin: 0;
+    border-radius: 5px;
+    border: 3px solid transparent;
+    color: #646464;
+}
+
+.border-animate {
+  border: 3px solid #F36B6B;
+  transition: all 3s;
 }
 
 input[type=text] {
@@ -67,7 +79,7 @@ header {
     height: 100px;
     padding: 0;
     line-height: 100px;
-    border-top: 3px solid #4D6DE3;
+    border-top: 3px solid #2196F3;
 }
 
 .tal {
@@ -178,20 +190,14 @@ header {
     border-radius: 10px;
     background: none;
     transition: all 0.2s;
-    background-color: #FFF;
-    color: #4D6DE3;
-    border: solid 3px #4D6DE3;
+    background-color: #2196F3;
+    color: #fff;
+    border: solid 3px #2196F3;
 }
 
 .submit:focus,
 #output:focus {
     outline: none;
-}
-
-.submit:hover {
-    background-color: #4D6DE3;
-    color: #FFF;
-    border: solid 3px #4D6DE3;
 }
 
 #output {

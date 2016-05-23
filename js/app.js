@@ -4,6 +4,8 @@
         var classSuffix = '';
         var answers = [];
 
+        $('.border-animate').removeClass('border-animate')
+
         $(".dependents").children("input:checked").each(function(){
 
             if($(this).attr('name') == 'check') {
@@ -37,18 +39,27 @@
         });
 
         if(!answers.options) {
-            alert("Please select atleast one sizing element !");
-            return;
+          $('#one .sidebar').addClass('border-animate')
+          window.location.href = '#one'
+          return
         }
 
-        if(!answers.rangestart || !answers.rangeend) {
-            alert("Range");
-            return;
+        if(!answers.rangestart) {
+          $('#two .sidebar').addClass('border-animate')
+          window.location.href = '#two'
+          return;
+        }
+
+        if(!answers.rangeend) {
+          $('#three .sidebar').addClass('border-animate')
+          window.location.href = '#three'
+          return;
         }
 
         if (!answers.margin && !answers.padding) {
-            alert('Please select atleast one, margin or padding !');
-            return;
+          $('#four .sidebar').text('Margin/Padding atleast one!').addClass('border-animate')
+          window.location.href = '#four'
+          return
         }
 
         // suffix [px, em, rem, %]
@@ -101,6 +112,6 @@
             // css = css.replace(/(\r\n|\n|\r)/gm,'').replace(/ /g,'').replace(/;/g,'');
         }
 
-        $('.row.eight').empty().html('<h2 class="tal">Output:</h2><textarea id="output">'+css+'</textarea>');
+        $('.row.eight').empty().html('<h2 class="tal">Output:</h2><textarea id="output">' + css + '</textarea>')
     })
 })();
