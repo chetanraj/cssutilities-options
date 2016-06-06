@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   color: #464646;
   font-family: Roboto;
 }
@@ -7,62 +8,58 @@ html, body {
  * Fonts
  */
 
- .f20 {
-	 font-size: 20px;
- }
+.f20 {
+  font-size: 20px;
+}
 
- .fw100 {
-   font-weight: 100;
- }
+.fw100 {
+  font-weight: 100;
+}
 
 /*
  * Heading
  */
 
 h1 {
-    font-size: 42px;
+  font-size: 42px;
 }
 
 .row {
-    text-align: center;
-    margin-bottom: 1em;
-    padding-top: 1em;
+  text-align: center;
+  margin-bottom: 1em;
+  padding-top: 1em;
 }
 
 .row .column-3 {
-    text-align: left;
+  text-align: left;
 }
 
 /*
  * Element Declerations
  */
-p {
-    font-size: 16px;
-    padding: .3em;
-    margin: 0;
-    border-radius: 5px;
-    border: 3px solid transparent;
-    color: #646464;
-}
 
-.border-animate {
-  border: 3px solid #F36B6B;
-  transition: all 3s;
+p {
+  font-size: 16px;
+  padding: .3em;
+  margin: 0;
+  border-radius: 5px;
+  border: 3px solid transparent;
+  color: #646464;
 }
 
 input[type=text] {
-    width: 95%;
-    font-size: 14px;
-    text-align: left;
-    border: solid 10px #FFF;
-    border-radius: 5px;
-    background-color: #FFF;
-    -webkit-appearance: none;
+  width: 95%;
+  font-size: 14px;
+  text-align: left;
+  border: solid 10px #FFF;
+  border-radius: 5px;
+  background-color: #FFF;
+  -webkit-appearance: none;
 }
 
 input[type=text]:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px #464646;
+  outline: none;
+  box-shadow: 0 0 0 2px #464646;
 }
 
 /*
@@ -70,53 +67,49 @@ input[type=text]:focus {
  */
 
 header {
-    text-align: center;
-    width: 100%;
-    margin: 0;
-    height: 100px;
-    padding: 0;
-    line-height: 100px;
-    border-top: 3px solid #2196F3;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  height: 100px;
+  padding: 0;
+  line-height: 100px;
+  border-top: 3px solid #2196F3;
 }
 
-.tal {
-    text-align: left;
+.box {
+  background: #F7F7F7;
+  border-radius: 5px;
+  padding: 0 1em 1em;
+  text-align: left;
 }
 
- .box {
-    background: #F7F7F7;
-    border-radius: 5px;
-    padding: 0 1em 1em;
-    text-align: left;
- }
+.number-prefix {
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  border-radius: 50%;
+  border: 5px solid #464646;
+}
 
- .number-prefix {
-    width: 2em;
-    height: 2em;
-    line-height: 2em;
-    border-radius: 50%;
-    border: 5px solid #464646;
- }
+.dependents {
+  position: relative;
+  margin-bottom: .5em;
+}
 
- .dependents {
-   position: relative;
-   margin-bottom: .5em;
- }
+.text-label-for-checkbox-bck {
+  padding-left: .5em;
+}
 
-  .text-label-for-checkbox-bck {
-      padding-left: .5em;
-  }
-
- .checkbox-bck label > span {
-   width: 20px;
-   height: 20px;
-   cursor: pointer;
-   position: absolute;
-   top: 0;
-   left: 0;
-   background: #fff;
-   border-radius: 4px;
-   border: 0.3px solid #4D6DE3;
+.checkbox-bck label > span {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  border-radius: 4px;
+  border: 0.3px solid #4D6DE3;
 }
 
 .checkbox-bck label > span:after {
@@ -131,6 +124,7 @@ header {
   opacity: 0;
   left: 5px;
 }
+
 .checkbox-bck input[type=radio] {
   visibility: hidden;
 }
@@ -163,53 +157,33 @@ header {
 }
 
 .myes input[type=radio]:checked + label > span:after,
-.pyes input[type=radio]:checked + label > span:after,
-.muyes input[type=radio]:checked + label > span:after {
+.pyes input[type=radio]:checked + label > span:after {
   content: 'y';
   opacity: 1;
 }
 
 .mno input[type=radio]:checked + label > span:after,
-.pno input[type=radio]:checked + label > span:after,
-.muno input[type=radio]:checked + label > span:after  {
+.pno input[type=radio]:checked + label > span:after {
   content: 'n';
   opacity: 1;
 }
 
 .submit {
-    cursor: pointer;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    margin-right: 20px;
-    font-family: Roboto;
-    font-size: 2em;
-    border-radius: 10px;
-    background: none;
-    transition: all 0.2s;
-    background-color: #2196F3;
-    color: #fff;
-    border: solid 3px #2196F3;
+  cursor: pointer;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  margin-right: 20px;
+  font-family: Roboto;
+  font-size: 2em;
+  border-radius: 10px;
+  background: none;
+  transition: all 0.2s;
+  background-color: #2196F3;
+  color: #fff;
+  border: solid 3px #2196F3;
 }
 
-.submit:focus,
-#output:focus {
-    outline: none;
-}
-
-#output {
-    width: 100%;
-    font-size: 14px;
-    text-align: left;
-    border: solid 10px #FFF;
-    border-radius: 5px;
-    background-color: #FFF;
-    -webkit-appearance: none;
-    box-shadow: 0 0 0 2px #464646;
-    min-height: 100px;
-    height: auto;
-    max-height: 150px;
-    overflow-y: scroll;
-    resize: none;
-    transition: all 0.2s;
+.submit:focus {
+  outline: none;
 }
