@@ -7,13 +7,15 @@
     "colors": "^1.1.2",
     "cssbeautify": "^0.3.1",
     "fs": "^0.0.2",
-    "inquirer": "^0.12.0"
+    "inquirer": "^0.12.0",
+    "istanbul": "^0.4.3"
   },
   "devDependencies": {
+    "gulp-uncss": "^1.0.5",
     "standard": "^6.0.8"
   },
   "scripts": {
-    "test": "standard"
+    "test": "standard cssutilities.js"
   },
   "standard": {
     "ignore": [
