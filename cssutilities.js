@@ -1,6 +1,7 @@
 var inquirer = require('inquirer')
 var cssbeautify = require('cssbeautify')
 var fs = require('fs')
+var colors = require('colors')
 
 var options = [
   {
@@ -118,15 +119,15 @@ inquirer.prompt(options, function (answers) {
   }
 
   if (!answers.margin && !answers.padding) {
-    css = 'Please select atleast one, margin or padding !'.black.bgWhite
-  }
-
-  if (answers.output === 'file') {
-    fs.writeFile(fname, css, function (err) {
-      if (err) throw err
-      console.log("It's saved!")
-    })
+    console.log(colors.black.bgWhite('Please select atleast one, margin or padding !'.black.bgWhite))
   } else {
-    console.log(css)
+    if (answers.output === 'file') {
+      fs.writeFile(fname, css, function (err) {
+        if (err) throw err
+        console.log("It's saved!")
+      })
+    } else {
+      console.log(css)
+    }
   }
 })
