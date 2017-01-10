@@ -3,25 +3,13 @@
   "version": "1.2.0",
   "description": "CSS layout utilities with options.",
   "main": "cssutilities.js",
-  "devDependencies": {
-    "colors": "^1.1.2",
+  "dependencies": {
     "cssbeautify": "^0.3.1",
-    "fs": "^0.0.2",
     "gulp-uncss": "^1.0.5",
-    "inquirer": "^0.12.0",
-    "istanbul": "^0.4.4",
-    "standard": "^7.1.2"
+    "inquirer": "^0.12.0"
   },
   "scripts": {
-    "test": "standard cssutilities.js"
-  },
-  "standard": {
-    "ignore": [
-      "/js/backbone.js",
-      "/js/underscore.js",
-      "/js/jquery.js",
-      "/js/app.js"
-    ]
+    "test": ""
   },
   "bin": {
     "cssutilities-options": "./bin/cssutilities-options"
@@ -38,10 +26,13 @@
     "web",
     "html"
   ],
-  "author": "chetanraj",
+  "author": "Chetan Raj<chetan.narian@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/chetanraj/cssutilities-options/issues"
   },
-  "homepage": "https://github.com/chetanraj/cssutilities-options#readme"
+  "homepage": "https://github.com/chetanraj/cssutilities-options#readme",
+  "devDependencies": {
+    "xo": "^0.17.1"
+  }
 }
