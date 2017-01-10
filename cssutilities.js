@@ -56,7 +56,7 @@ const options = [
 		choices: ['file', 'console']
 	}];
 
-inquirer.prompt(options, function (answers) {
+inquirer.prompt(options).then(function (answers) {
 	var css = '';
 	var classSuffix = '';
 
