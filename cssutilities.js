@@ -16,8 +16,7 @@ const options = [
 		name: 'rangestart',
 		message: 'Range Start',
 		validate: function (value) {
-			var valid = !isNaN(parseFloat(value));
-			return valid || 'Please enter a number';
+			validateNumber(value);
 		},
 		filter: Number
 	}, {
@@ -25,8 +24,7 @@ const options = [
 		name: 'rangeend',
 		message: 'Range End',
 		validate: function (value) {
-			var valid = !isNaN(parseFloat(value));
-			return valid || 'Please enter a number';
+			validateNumber(value);
 		},
 		filter: Number
 	}, {
@@ -133,3 +131,8 @@ inquirer.prompt(options).then(function (answers) {
 		console.log(css);
 	}
 });
+
+function validateNumber(value) {
+	var valid = !isNaN(parseFloat(value));
+	return valid || 'Please enter a number';
+}
