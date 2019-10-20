@@ -11,6 +11,7 @@
     "xo": "^0.25.3"
   },
   "scripts": {
+    "test": "xo",
     "prettify:xo": "xo"
   },
   "bin": {
