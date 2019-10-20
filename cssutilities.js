@@ -15,48 +15,57 @@ const options = [
 		type: 'input',
 		name: 'rangestart',
 		message: 'Range Start',
-		validate: function (value) {
-			validateNumber(value);
+		validate(value) {
+			const valid = !isNaN(parseFloat(value));
+			return valid || 'Please enter a number';
 		},
 		filter: Number
-	}, {
+	},
+	{
 		type: 'input',
 		name: 'rangeend',
 		message: 'Range End',
-		validate: function (value) {
-			validateNumber(value);
+		validate(value) {
+			const valid = !isNaN(parseFloat(value));
+			return valid || 'Please enter a number';
 		},
 		filter: Number
-	}, {
+	},
+	{
 		type: 'confirm',
 		name: 'margin',
 		message: 'Add margin ?',
 		default: true
-	}, {
+	},
+	{
 		type: 'confirm',
 		name: 'padding',
 		message: 'Add padding',
 		default: true
-	}, {
+	},
+	{
 		type: 'confirm',
 		name: 'more',
 		message: 'Do you need More Utilities like Floats, Display and Overflow',
 		default: false
-	}, {
+	},
+	{
 		type: 'confirm',
 		name: 'minify',
 		message: 'minify',
 		default: true
-	}, {
+	},
+	{
 		type: 'list',
 		name: 'output',
 		message: 'Do you want the css to store in a file or output here in console ?',
 		choices: ['file', 'console']
-	}];
+	}
+];
 
-inquirer.prompt(options).then(function (answers) {
-	var css = '';
-	var classSuffix = '';
+inquirer.prompt(options).then(answers => {
+	let css = '';
+	let classSuffix = '';
 
 	switch (answers.options) {
 		case 'px':
@@ -75,7 +84,7 @@ inquirer.prompt(options).then(function (answers) {
 			console.log('nothing here');
 	}
 
-	for (var i = answers.rangestart; i <= answers.rangeend; i++) {
+	for (let i = answers.rangestart; i <= answers.rangeend; i++) {
 		if (answers.margin) {
 			css += String('.m' + i + classSuffix + '{margin:' + i) + answers.options + ';}';
 
@@ -105,9 +114,9 @@ inquirer.prompt(options).then(function (answers) {
 		css += '.db{display:block}.dib{display:inline-block}.di{display:inline}.dt{display:table}.dtc{display:table-cell}.fl{float:left}.fr{float:right}.oh{overflow:hidden}.cb,.clear{clear:both}';
 	}
 
-	var fname = 'cssutilities.css';
+	let fname = 'cssutilities.css';
 	if (answers.minify === false) {
-		var beautified = cssbeautify(css, {
+		const beautified = cssbeautify(css, {
 			indent: '  ',
 			openbrace: 'separate-line',
 			autosemicolon: true
@@ -121,18 +130,14 @@ inquirer.prompt(options).then(function (answers) {
 	if (!answers.margin && !answers.padding) {
 		console.log('Please select atleast one, margin or padding !');
 	} else if (answers.output === 'file') {
-		fs.writeFile(fname, css, function (err) {
+		fs.writeFile(fname, css, err => {
 			if (err) {
 				throw err;
 			}
+
 			console.log('It\'s saved!');
 		});
 	} else {
 		console.log(css);
 	}
 });
-
-function validateNumber(value) {
-	var valid = !isNaN(parseFloat(value));
-	return valid || 'Please enter a number';
-}
