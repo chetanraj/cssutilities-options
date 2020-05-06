@@ -5,14 +5,17 @@
   "main": "cssutilities.js",
   "dependencies": {
     "cssbeautify": "^0.3.1",
-    "inquirer": "^7.0.0"
+    "inquirer": "^7.0.0",
+    "snyk": "^1.319.1"
   },
   "devDependencies": {
     "xo": "^0.25.3"
   },
   "scripts": {
     "test": "xo",
-    "prettify:xo": "xo"
+    "prettify:xo": "xo",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "bin": {
     "cssutilities-options": "./bin/cssutilities-options"
@@ -34,5 +37,6 @@
   "bugs": {
     "url": "https://github.com/chetanraj/cssutilities-options/issues"
   },
-  "homepage": "https://github.com/chetanraj/cssutilities-options#readme"
+  "homepage": "https://github.com/chetanraj/cssutilities-options#readme",
+  "snyk": true
 }
